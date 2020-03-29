@@ -11,3 +11,6 @@ tvShow.push(prompt('ввести ще одну тв програму',))
 
 let tvShowString = tvShow.join();
 console.log(tvShowString);
+
+let tvShowString = tvShow.join(' |');
+console.log(tvShowString);
