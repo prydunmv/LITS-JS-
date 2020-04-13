@@ -5,11 +5,11 @@ let sumNcome = 0;
 let sumCosts = 0;
 
 for (let i = 0; i < ncome.length; i++) {
-    sumNcome = sumNcome + (ncome[i]);
+    sumNcome = sumNcome + ncome[i];
 }
 
 for (let i = 0; i < costs.length; i++) {
-    sumCosts = sumCosts + (costs[i]);
+    sumCosts = sumCosts + costs[i];
 }
 
 let balans = sumNcome - sumCosts;
