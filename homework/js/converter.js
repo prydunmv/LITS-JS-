@@ -1,7 +1,7 @@
 
 let valutes = {
     'долар': 25,
-    'євро': 30,
+    'канадський долар': 30,
     'рубль': 0.20,
     'злоті': 7,
     'фунт стерлінг': 32
@@ -19,14 +19,13 @@ let course = valut.rates;
 }
 
 
-function myFunction() {
+document.getElementById("countButton").addEventListener("click",  function() {
     let valute = $('#valutes')[0].value;
     let course = valutes[valute];
     console.log(valutes);
     let number = 0;
     number = document.getElementById('number').value;
     document.getElementById("text").innerHTML = "за "+ number + " одиниць ви отримаєтете в гривневому еквіваленті " +course * number +" грн";
-  }
+  });
 
-getCurrency()
-
+  getCurrency() 
